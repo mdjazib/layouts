@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+</head>
+
+<body>
+    <div class="logo">Logo</div>
+    <nav>Navigation</nav>
+    <header>Header / Banner</header>
+    <div class="main">
+        <aside>Side Bar</aside>
+        <main>Body Area</main>
+    </div>
+    <footer>Footer</footer>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .logo {
+            background-color: #cfcfcf;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #cfcfcf;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header {
+            background-color: #cfcfcf;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        aside {
+            background-color: #cfcfcf;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 300px;
+        }
+
+        main {
+            background-color: #cfcfcf;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #cfcfcf;
+            padding: 30px;
+            text-align: center;
+        }
+
+        @media (max-width:900px) {
+            aside {
+                display: none;
+            }
+        }
+    </style>
+</body>
+
+</html>
